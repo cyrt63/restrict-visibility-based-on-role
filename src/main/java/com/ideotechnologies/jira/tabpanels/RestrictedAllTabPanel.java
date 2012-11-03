@@ -13,10 +13,6 @@ public class RestrictedAllTabPanel extends AllTabPanel {
 	private static final String GROUP_NAME = "groupname";
 	public RestrictedAllTabPanel(PluginAccessor pluginAccessor) {
 		super(pluginAccessor);
-		
-		
-		this.defaultGroupManager = defaultGroupManager;
-		this.jiraDurationUtils = jiraDurationUtils;
 	}
 	public boolean showPanel(Issue issue, User remoteUser) {
 		String group=descriptor.getParams().get(GROUP_NAME);

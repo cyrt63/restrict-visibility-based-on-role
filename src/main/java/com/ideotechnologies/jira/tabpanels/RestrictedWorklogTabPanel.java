@@ -23,7 +23,6 @@ public class RestrictedWorklogTabPanel extends WorklogTabPanel {
 			FieldVisibilityManager fieldVisibilityManager) {
 		super(worklogService, jiraDurationUtils, fieldLayoutManager, rendererManager,
 				applicationProperties, fieldVisibilityManager);
-		this.defaultGroupManager = defaultGroupManager;
 		this.jiraDurationUtils = jiraDurationUtils;
 	}
 	public boolean showPanel(Issue issue, User remoteUser) {

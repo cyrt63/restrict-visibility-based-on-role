@@ -41,7 +41,6 @@ public class RestrictedCommentTabPanel extends CommentTabPanel {
 	public boolean showPanel(Issue issue, User remoteUser) {
 		String group=descriptor.getParams().get(GROUP_NAME);
 		if (remoteUser != null)
-			//	return defaultGroupManager.isUserInGroup(remoteUser.getDisplayName(), );
 			return remoteUser.inGroup(group);
 	       
 	    return false;
