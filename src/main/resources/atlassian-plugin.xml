@@ -1,0 +1,34 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="1">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+    </plugin-info>
+
+    <component key="eventListener" class="com.ideotechnologies.jira.listener.CommentListener">
+        <description>Comments Listener</description>
+    </component>
+
+    <component key="RestrictedChangeHistoryTabPanel" class="com.ideotechnologies.jira.tabpanels.RestrictedChangeHistoryTabPanel">
+        <description>Restricted Change History TabPanel</description>
+    </component>
+    <component key="RestrictedCommentTabPanel" class="com.ideotechnologies.jira.tabpanels.RestrictedCommentTabPanel">
+        <description>Restricted Comment TabPanel</description>
+    </component>
+    <component key="Comment TabPanel Clients View" class="com.ideotechnologies.jira.tabpanels.CommentTabPanelClientsView">
+        <description>Comment TabPanel Clients View</description>
+    </component>
+
+    <component key="Restricted Work log TabPanel" class="com.ideotechnologies.jira.tabpanels.RestrictedWorklogTabPanel">
+        <description>Restricted Work log TabPanel</description>
+    </component>
+
+    <component key="Restricted Activity TabPanel" class="com.ideotechnologies.jira.tabpanels.RestrictedActivityStreamIssueTab">
+        <description>Restricted Activity TabPanel</description>
+    </component>
+
+    <component key="Restricted All TabPanel" class="com.ideotechnologies.jira.tabpanels.RestrictedAllTabPanel">
+        <description>Restricted All TabPanel</description>
+    </component>
+
+</atlassian-plugin>
